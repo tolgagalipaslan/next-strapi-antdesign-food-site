@@ -1,27 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+*{
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+ .ant-menu-item-selected{
+  color: #000 !important;
+}
+.ant-menu-item-selected::after{
+  border-bottom-color:#000 !important ;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.ant-menu-item:hover::after {
+  border-bottom-color: #000 !important; /* Burada istediğiniz hover rengini belirtebilirsiniz */
 }
+.ant-drawer-mask{
+  --tw-backdrop-blur: blur(5px) !important;
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia) !important;
+}
+.discoverImage{
+  background-image:url("../public/fast-food-yellow-orange-seamless-pattern_554517-531.jpg") ;
+  background-size: 300px;
+  background-repeat:repeat
+}
+.burgerShadow{
+  text-shadow: 3px 3px wheat;
+}
+
+
+.heroCard {
+  transform-style: preserve-3d;
+}
+
+.heroCardPers {
+  transform-style: preserve-3d;
+  transform: translate3d(0,0,-40px);
+  -webkit-transform: translate3d(0,0,-40px);
+  -moz-transform: translate3d(0,0,-40px);
+  -ms-transform: translate3d(0,0,-40px);
+  -o-transform: translate3d(0,0,-40px);
+}
+.heroCardLinks {
+  transform-style: preserve-3d;
+  transform: translate3d(0,0,-50px);
+  -webkit-transform: translate3d(0,0,-50px);
+  -moz-transform: translate3d(0,0,-50px);
+  -ms-transform: translate3d(0,0,-50px);
+  -o-transform: translate3d(0,0,-50px);
+}
+.heroCardImg {
+  transform-style: preserve-3d;
+  transform: translate3d(0,0,50px);
+  -webkit-transform: translate3d(0,0,50px);
+  -moz-transform: translate3d(0,0,50px);
+  -ms-transform: translate3d(0,0,50px);
+  -o-transform: translate3d(0,0,50px);
+}
+
