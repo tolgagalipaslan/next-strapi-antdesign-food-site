@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import VanillaTilt from "vanilla-tilt";
 const Discover = () => {
   useEffect(() => {
@@ -8,9 +8,10 @@ const Discover = () => {
       speed: 400,
     });
   }, []);
+
   return (
     <div className="w-full discoverImage md:h-[850px] relative  h-[1000px] ">
-      <div className="absolute w-full h-full bg-yellow-500/60 z-0  ">
+      <div className="absolute w-full h-full bg-yellow-500/70 z-0  ">
         <div className=" flex  md:flex-row flex-col items-center md:justify-center  justify-around font-bebas h-full px-5 overflow-x-hidden">
           <div className="md:max-w-[450px] w-full flex flex-col gap-2 md:scale-150 justify-center items-center z-50">
             <div className="text-sm  border-dashed border-2 w-fit p-1 border-black/50">

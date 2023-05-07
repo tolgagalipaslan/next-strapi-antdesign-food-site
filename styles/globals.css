@@ -65,3 +65,23 @@
   -o-transform: translate3d(0,0,50px);
 }
 
+.container{
+ max-width: 1200px;
+ margin: 0 auto;
+}
+
+.swiper-pagination-bullets-dynamic {
+ 
+  color: #000;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #000;
+  
+}
+.reservationImage{
+  background-color: #0a0909;
+ 
+}

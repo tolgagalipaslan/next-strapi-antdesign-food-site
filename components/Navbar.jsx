@@ -116,19 +116,20 @@ const Navbar = () => {
     <Layout className="bg-transparent absolute w-full   ">
       <Header
         key={"mainHeader"}
-        className={`bg-transparent mainHeader flex justify-between items-center h-[80px] fixed top-0 z-50 w-full ${show} duration-300`}
+        className={`bg-transparent mainHeader flex justify-between items-center h-[80px] fixed top-0 z-50 w-full ${show} duration-300   `}
       >
-        <h1 className=" font-bold flex items-center gap-2 float-left  text-[#43200c]  ">
+        <h1 className=" font-bold flex items-center gap-2 float-left  text-[#43200c] font-bebas text-3xl ">
           {" "}
           <GiHamburger className="text-5xl text-[#43200c]" /> BURGER HOUSE{" "}
         </h1>
         <Menu
-          className="md:flex hidden bg-transparent font-bebas  border-none  text-xl h-full   "
+          className="hidden md:flex w-6/12 bg-transparent font-bebas  border-none   text-xl h-full  justify-end  "
           theme="light"
           mode="horizontal"
           defaultSelectedKeys={["1"]}
           items={tabs}
         />
+
         <MenuOutlined
           className="text-2xl md:hidden flex"
           onClick={() => {

@@ -16,6 +16,7 @@ module.exports = {
     fontFamily: {
       sigmar: ["Sigmar", "cursive"],
       bebas: ["Bebas Neue", "cursive"],
+      roboto: ["Roboto Condensed", "sans-serif"],
     },
   },
   plugins: [],
